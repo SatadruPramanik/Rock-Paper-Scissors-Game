@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-wrapper">
+            <header class="game-header">
+                <h1>Rock • Paper • Scissors</h1>
+                <p class="subtitle">Classic Game</p>
+            </header>
+
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="score-label">You</span>
+                    <span class="score-value" id="playerScore">0</span>
+                </div>
+                <div class="divider"></div>
+                <div class="score-item">
+                    <span class="score-label">Computer</span>
+                    <span class="score-value" id="computerScore">0</span>
+                </div>
+            </div>
+
+            <div class="game-info">
+                <p id="gameMessage" class="message">Make your choice!</p>
+            </div>
+
+            <div class="choices-container">
+                <button class="choice-btn" data-choice="rock" title="Rock">
+                    <span class="choice-icon">✊</span>
+                    <span class="choice-name">Rock</span>
+                </button>
+                <button class="choice-btn" data-choice="paper" title="Paper">
+                    <span class="choice-icon">✋</span>
+                    <span class="choice-name">Paper</span>
+                </button>
+                <button class="choice-btn" data-choice="scissors" title="Scissors">
+                    <span class="choice-icon">✌️</span>
+                    <span class="choice-name">Scissors</span>
+                </button>
+            </div>
+
+            <div class="game-display">
+                <div class="player-choice">
+                    <p class="player-label">Your Choice</p>
+                    <div class="choice-display" id="playerDisplay">
+                        <span class="choice-icon-large">?</span>
+                    </div>
+                </div>
+
+                <div class="vs-separator">
+                    <span>VS</span>
+                </div>
+
+                <div class="computer-choice">
+                    <p class="player-label">Computer Choice</p>
+                    <div class="choice-display" id="computerDisplay">
+                        <span class="choice-icon-large">?</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-container">
+                <p id="resultText" class="result-text"></p>
+            </div>
+
+            <div class="button-group">
+                <button id="playAgainBtn" class="primary-btn">Play Again</button>
+                <button id="resetBtn" class="secondary-btn">Reset Score</button>
+            </div>
+
+            <footer class="game-footer">
+                <p>Best of luck! First to 5 wins wins the match.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
